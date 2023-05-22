@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de AnimaciĂłn CSS</title>
+	<style type="text/css">
+		img.uno{
+			width: 100px;
+			height: 100px;
+			position: relative;
+			animation: 2s infinite linear;
+            animation-name: girar;
+            margin: 20px;
+		}
+
+		@keyframes girar {
+			from {
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}
+        img.dos{
+			width: 100px;
+			height: 100px;
+			position: relative;
+			animation: 2s infinite linear;
+            animation-name: abajo;
+		}
+        @keyframes abajo {
+        0%   {left:0px; top:0px;}
+        25%  {left:200px; top:0px;}
+        50%  {left:200px; top:0px;}
+        75%  {left:200px; top:200px;}
+        100% {left:0px; top:0px;}
+      }
+      img.tres{
+			width: 100px;
+			height: 100px;
+			position: relative;
+			animation: 2s infinite linear;
+            animation-name: girardos;
+            margin: 20px;
+		}
+
+		@keyframes girardos {
+			from {
+				transform: rotate(360deg);
+			}
+			to {
+				transform: rotate(0deg);
+			}
+		}
+        img.cuatro{
+			width: 100px;
+			height: 100px;
+			position: relative;
+			animation: 4s infinite linear;
+            animation-name: girartres;
+            margin: 20px;
+		}
+
+		@keyframes girartres {
+            0%{left: 0px; top: 0px;}
+            25%{left: opx; top: 200px;}
+            50%{left: 0px; top: 0px;}
+            75%{left: opx; top: 200px;}
+            100%{left: 0px; top: 0px;}
+		}
+	</style>
+</head>
+<body>
+    <div> <img src="Norman.jpg" class="uno"> <img src="chifuyu.jpg" class="tres"></div>
+    <div><img src="Tomoe.jpg" class="dos"></div>
+    <div><img src="Asuna_SAO.webp" class="cuatro"></div>
+</body>
+</html>

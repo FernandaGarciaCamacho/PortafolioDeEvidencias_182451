@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+    <style>
+        body
+        {
+            background-color: rgb(242, 229, 255);
+        }
+        
+    </style>
+    <body>
+        <h1 style="color: rgb(158, 104, 179);">Formulario</h1>
+        <form method="post" action="mailto.182451@upslp.edu.mx">
+            <fieldset>
+                <legend>Datos Persoanles</legend>
+                <label for="matricula">Matrícula:</label> &nbsp; <input type="text" name="matricula" id="matricula" placeholder="Ingrese su matricula">
+                <br><br>
+                <label for="nombre">Nombre:</label> &nbsp; <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre"> 
+                <br><br> 
+                <label for="correo">Correo Institucional:</label> &nbsp; <input type="text" name="correo" id="correo" placeholder="Ingresa tu correo">
+                <br> <br> 
+                <label for="correoperso">Correo Personal:</label> &nbsp; <input type="text" name="correoperso" id="correoperso" placeholder="Ingresa tu correo personal">
+                <br> <br> 
+                <label for="telefono">Telefono:</label> &nbsp; <input type="tel" name="telefono" id="telefono" placeholder="000-000-0000">
+                <br> <br> 
+                <label for="celular">Celular:</label> &nbsp; <input type="tel" name="celular" id="celular" placeholder="000-000-0000"> 
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Datos Academicos</legend>
+                <label for="preg1">Conoces tu situación académica actual?</label> 
+                <br>
+                <input type="radio" name="preg1Si" id="preg1"> <label for="preg1">Si</label>
+                <input type="radio" name="preg1No" id="preg1"> <label for="preg1">No</label>
+                <br> <br>
+                <label for="preg2">Estas condicionado actualmente?</label> 
+                <br>
+                <input type="radio" name="preg2Si" id="preg2"> <label for="preg2">Si</label>
+                <input type="radio" name="preg2No" id="preg2"> <label for="preg2">No</label>
+                <br> <br>
+                <label for="preg3">En algunos momentos en tu estancia en la Universidad has sentido baja motivación?</label> 
+                <br>
+                <input type="radio" name="preg3Si" id="preg3"> <label for="preg3">Si</label>
+                <input type="radio" name="preg3No" id="preg3"> <label for="preg3">No</label>
+                <br> <br>
+                <label for="preg4">Consideras que requieres apoyo del área de psicopedagogía?</label> 
+                <br>
+                <input type="radio" name="preg4Si" id="preg4"> <label for="preg4">Si</label>
+                <input type="radio" name="preg4No" id="preg4"> <label for="preg4">No</label>
+                <br> <br>
+                <label for="preg5">Que es lo que consideras te faltó el semestre pasado para tener un rendimiento deseable?</label>
+                <br> <br>
+                <textarea name="preg7" rows="10" cols="60"></textarea>
+                <br> <br> 
+                <label for="preg6">En el caso de que requieras apoyo de psicopedagogía por qué consideras que requieres el apoyo?</label>
+                <br> <br> 
+                <textarea name="preg6" rows="10" cols="60"></textarea>
+                <br><br>
+                <label for="preg7">Brevemente describe cuales son tus metas a corto, mediano y largo plazo.</label>
+                <br><br>
+                <textarea name="preg7" rows="10" cols="60"></textarea>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Primer Parcial</legend>
+                <label for="preg8">Cómo consideras tu desempeño en el primer parcial?</label>
+                <br><br> 
+                <textarea name="preg8" rows="10" cols="60"></textarea> 
+                <br> <br> 
+                <label for="preg9">Reprobaste alguna materia?</label>
+                <br> <br>
+                <input type="radio" name="preg9Si" id="preg9"> <label for="preg9">Si</label>
+                <input type="radio" name="preg9No" id="preg9"> <label for="preg9">No</label>
+                &nbsp;&nbsp;&nbsp;
+                <label for="preg9">Cual?</label> &nbsp; <input type="text" name="preg9" id="preg9">
+                <br> <br> 
+                <label for="preg10"></label>Cuáles fueron las principales causas</label>
+                <br> <br>
+                <textarea name="preg10" rows="10" cols="60"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Persoanlidad</legend>
+                <br> 
+                <label for="preg11">Cuáles son las cualidades que te identifican?</label>
+                <br> <br>
+                <textarea name="preg11" rows="10" cols="60"></textarea>
+                <br><br>
+                <label for="preg12">Cuales son los defectos que te identifican?</label>
+                <br><br>
+                <textarea name="preg11" rows="10" cols="60"></textarea>
+                <br> <br> 
+                <label for="preg12">Cuales de tus defectos crees que puedas cambiar a corto plazo (6 meses)?</label>
+                <br> <br>
+                <textarea name="preg12" rows="10" cols="60"></textarea>
+                <br> <br>
+            </fieldset>
+            <p><input type="submit" value="Enviar"> <input type="reset" value="Borrar"></p>
+        </form>
+    </body>
+</html>

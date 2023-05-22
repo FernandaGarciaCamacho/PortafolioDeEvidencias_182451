@@ -1,0 +1,11 @@
+Para qué sirve cada propiedad?
+	Background-color: Sirve para darle color al fondo de nuestra caja 
+	Width: Es el ancho de nuestra caja 
+	border: Ancho de nuestro borde y color 
+	Padding: Muestra el ancho de espacio que deseamos haya entre el borde y el contenido de la caja. 
+	Margin: Muestra el espacio que queremos dejar entre la caja y otros elementos externos. 
+
+QUE SUCEDE SI LA IMAGEN LA COLOCAS DENTRO DEL DIV EXISTENTE?
+	La imagen queda dentro de la caja, en caso de ser de un tamaño mayor, suele salirse de esta. 
+QUE SUCEDE SI LA IMAGEN LA COLOCAS DENTRO DE UN NUEVO DIV?
+	La imagen queda dentro de una nueva caja, separada del texto. 

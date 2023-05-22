@@ -1,0 +1,26 @@
+QUE SUCEDIO? 
+	El color de los pares cambio, y esta vez cambio el color de los impares
+EN CUAL DE LOS DOS CODIGOS SE ESTÁ AGREGANDO ESTADOS?
+	En el segundo ejercicio
+SI SE AGREGAN 3 TABLAS A CADA UNO DE LOS CODIGOS TODAS TIENEN EL MISMO FORMATO?
+	Si, pues el diseño se mantiene para toda etiqueta con un mismo nombre 
+QUE DIFERENCIAS ENCUENTRAS EN LOS CODIGOS?
+	En el primero nos enseña más a como crear un boton
+	En el segundo nos dice que estilo le podemos poner
+	En el tercero nos muestra los diseños de una manera más a fondo, y combinado con las clases 
+SE MANEJAN CLASES O IDS?
+	Clases 
+QUE TIPÓ DE ESTILO ES EN LINEA, INCRUSTADO O EXTERNO?
+	Incrustado
+CUANTOS ESTADOS SE DETECTAN EN CADA HIPERVÍNCULO?
+	4, link, visitado, activado y hover. 
+CUANTOS LINKS TIENE CADA CODIGO
+	El primero y el segubndo 3, el tercero 6. 
+
+http://fernandagarcia.0fees.us/Ejercicio_Listas.html
+http://fernandagarcia.0fees.us/Ejercicio_Tablas.html
+http://fernandagarcia.0fees.us/Ejercicio_Tablas2.html
+http://fernandagarcia.0fees.us/Ejercicio_Boton1.html
+http://fernandagarcia.0fees.us/Ejercicio_Boton2.html
+http://fernandagarcia.0fees.us/Ejercicio_Boton3.html
+
