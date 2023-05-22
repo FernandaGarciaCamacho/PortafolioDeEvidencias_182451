@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <script>
+            let i=0; 
+            let j=0; 
+            let txt = ""; 
+            txt=txt + "<table border=1>";
+            function crear()
+            {
+                let f=document.preguntas[0].value
+                let c=document.preguntas[1].value
+                let ca=document.preguntas[2].value
+                for (i=0;i<f; i++)
+                {
+                    txt=txt+"<tr>";  
+                    for (j=0; j<c; j++)
+                    {
+                        txt=txt+"<td>x </td>";
+                    }
+                    txt=txt+"</tr>";    
+                }
+                txt=txt + "</table>";
+                alert (txt);
+                document.getElementById("demo").innerHTML = txt;
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <form name="preguntas" action="#" onSubmit="return crear()">
+                <p>Ingrese el numero de filas</p>
+                <input type="text" name="fila">
+                <p>Ingrese el numero de columnas</p>
+                <input type="text" name="columna">
+                <p>Ingrese el numero de casillas a llenar</p>
+                <input type="text" name="casilla">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <p id="demo"></p>
+    </body>
+</html>

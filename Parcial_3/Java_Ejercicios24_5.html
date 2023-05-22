@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript">
+function myfunction(txt){
+alert(txt)
+}
+function myfuncion2(txt1, txt2)
+{
+    alert(txt1+txt2)
+}
+</script>
+</head>
+<body>
+<form name="form1">
+<input name="entrada1">
+<input name="entrada2"><br>
+<input type="button" onclick="myfunction(form1.entrada1.value)"value="Imprimir Primer Texto">
+<input type="button" onclick="myfunction(form1.entrada2.value)"value="Imprimir Segundo Texto">
+<input type="button" onclick="myfuncion2(form1.entrada1.value, form1.entrada2.value)"value="Imprimir Ambos Textos">
+</form>
+<p>By pressing the button, a function with an argument will be called.
+The function will alert this argument.
+</p>
+</body>
+</html>

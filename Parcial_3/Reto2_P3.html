@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        div.principal
+        {
+            width: 50%;
+            padding: 40px;
+            border: 2px solid indigo;
+            border-radius: 10px;
+            background-color: rgb(142, 124, 155);
+            color: aliceblue;
+        }
+        div.uno
+        {
+            float: inline-end;
+        }
+        table, td
+        {
+            border: 1px solid black;
+            width: 200px;
+            height: 30px;
+            background-color: rgb(244, 233, 248);
+        }
+        body
+        {
+            background-color: rgb(225, 209, 236);
+        }
+        input
+        {
+            background-color: rgb(212, 236, 236);
+        }
+    </style>
+    <body>
+        <center>
+            <br><br><br><br><br><br><br><br><br>
+        <script> 
+            function funcion_mm()
+            {
+                var x=document.forms[0].entrada1.value;
+                var mm=x * 25.4; 
+                document.getElementById("mm").innerHTML =
+                "mm " + mm ;
+            }
+            function funcion_cm()
+            {
+                var x=document.forms[0].entrada1.value;
+                var cm=x * 2.54; 
+                document.getElementById("cm").innerHTML =
+                "cm " + cm ;
+            }
+            function funcion_m()
+            {
+                var x=document.forms[0].entrada1.value;
+                var m=x * 0.0254; 
+                document.getElementById("m").innerHTML =
+                "m " + m ;
+            }
+            function funcion_km()
+            {
+                var x=document.forms[0].entrada1.value;
+                var km=x * 0.0000254; 
+                document.getElementById("km").innerHTML =
+                "km " + km ;
+            }
+        </script>
+        <div class="principal">
+            <p>Ingrese el valor en pulgadas</p>
+            <form name="form1">
+            <input name="entrada1">
+            </form>
+            <div>
+                <br>
+                <input type="button" onclick="funcion_mm()"value="mm">
+                <input type="button" onclick="funcion_cm()"value="cm">
+                <input type="button" onclick="funcion_m()"value="m">
+                <input type="button" onclick="funcion_km()"value="km">
+            </div>
+            <table>
+                <tr>
+                    <br>
+                    <td id="mm">    </td>
+                    <td id="cm">    </td>
+                    <td id="m">    </td>
+                    <td id="km">     </td>
+                </tr>
+            </table>
+        </div>
+    </center>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+</head>
+ 
+<body>
+<p> Uso de variables en javascript Funcion prompt</p>
+<script type="text/javascript">
+var num1 = parseInt(prompt("Introduce un nÃºmero 1"));  //pasar el numero introducido a entero
+var num2 = parseInt(prompt("Introduce un nÃºmero 2"));  //pasar el numero introducido a entero
+var op = parseInt(prompt("Introduce la operacion 1.- suma, 2.- resta, 3.-multiplicacion, 4.- Division")); //pasar el numero introducido a entero
+var r=0;
+alert("Los datos introducidos son");
+alert(num1);
+alert(num2);
+alert(op);
+if(op==1)
+{
+  var r=num1+num2;
+  alert("la operacion seleccionada es una suma");
+}
+if(op==2)
+{	
+  var r=num1-num2;
+  alert("la operacion seleccionada es una resta");
+}
+if(op==3)
+{ 
+  var r=num1*num2;
+  alert("la operacion seleccionada es una -multiplicacion");
+ }
+if(op==4)
+{
+  var r=num1/num2;
+  alert("la operacion seleccionada es una Division");
+}
+
+alert("El resultado de la operaciÃ³n es \n"+r);
+</script>
+</body>
+</html>

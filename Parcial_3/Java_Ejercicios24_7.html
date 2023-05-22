@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Bienvenida del usuario</title>
+    <script type = "text/javascript">
+    function alertName() {
+        var name = document.forms[0].nametext.value;
+        if (name == "lily") {
+            alert("Hola Lily.  Bienvenido a la pÃ¡gina eres el revisor");
+        }
+        else if (name == "guest") {
+            alert("Hola visitante, solo tendrÃ¡s acceso a ciertas pÃ¡ginas");
+        }
+        else {
+            alert("Hola " + name + "tu no tienes acceso.");
+        }
+        return true;
+    }  
+        
+    </script>
+</head>
+<body>
+<form id="myform" action="#" onsubmit="return alertName();">
+<p>Username: <input id="nametext" name="username" type="text" /></p>
+<p><input type="submit" /></p>
+</form>
+</body>
+</html>

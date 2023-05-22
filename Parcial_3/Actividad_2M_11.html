@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://fernandagarcia.0fees.us/Ejercicios3M/Actividad_2M_11.html?i=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+</style>
+</head><body>
+
+<p>
+<button onclick="myMove()">Click Me</button>
+<button onclick="regresar()">Regresar</button>
+</p> 
+
+<div id="container">
+<div id="animate" style="background-image: url(&quot;gato.jfif&quot;); top: 0px; left: 0px;"></div>
+</div>
+
+<script>
+function myMove() {
+  var elem = document.getElementById("animate");   
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+function regresar() {
+  var elem = document.getElementById("animate");   
+  var pos = 350;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 0) {
+      clearInterval(id);
+    } else {
+      pos--; 
+      elem.style.top = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+</script>
+
+
+
+</body></html>

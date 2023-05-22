@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Generador de numeros aleatorios</h2>
+
+<form name="form" action="#" onSubmit="return imprimir()">
+    Ingresa el numero de numeros aleatorios que desee (Limite 1-1000): <input type="text" name="num">
+</form>
+<input type="submit" value="Imprimir" onclick="return imprimir()">
+
+<p>Los numeros generados son:</p>
+<p id="demo"></p>
+<p id="error"></p>
+<script>
+function imprimir()
+{
+    document.getElementById("error").innerHTML = "     ";
+    const numbers=[];
+    let txt = "";
+    document.getElementById("demo").innerHTML = " ";
+    let x=document.form[0].value
+    if(x<=1000 && x>=1)
+    {
+        for (i=0;i<x; i++)
+        {
+        numbers[i]=Math.floor(Math.random() * 100);
+        }
+        numbers.forEach(myFunction);
+        document.getElementById("demo").innerHTML = txt;
+
+        function myFunction(value, index, array) {
+        txt += value + "<br>"; 
+        }
+    }
+    else
+    {
+        document.getElementById("error").innerHTML = "Valor fuera del rango";
+    }
+}
+</script>
+
+</body>
+</html>

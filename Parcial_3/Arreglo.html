@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            const arreglo=[]; 
+            function original()
+            {
+                arreglo[0]=document.froms["arreglo"]["numero1"].name; 
+                arreglo[1]=document.froms["arreglo"]["numero2"].name; 
+                document.getElementById("original").innerHTML = "El arreglo original es:"+arreglo[0]+","+arreglo[1];
+            }
+        </script>
+        <form name="arreglo" action="" onsubmit="return original()">
+            <p>Numero 1:</p>
+            <input type="text" name="numero1">
+            <p>Numero 2:</p>
+            <input type="text" name="numero2">
+            
+        </form>
+        <button type="submit" >Original</button>
+        <br>
+        <p id="original"> </p>
+    </body>
+</html>
